@@ -42,9 +42,5 @@ To run this project on your local machine you need to follow this steps
 7. Run this command `gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c`
 8. The output will be displayed in your terminal
 ### Project Collaborators
-<div style="display:flex; justify-content space-around; align-items: center; flex-wrap: wrap;">
-<div><img align="center" style="object-cover:cover;" src="https://avatars.githubusercontent.com/u/73972088?v=4" alt="Victor Chukwuemeka" /></div>
-<div><img align="center" style="object-cover:cover;" src="https" alt="Mkpot Obot" /></div>
-</div>
 
 <small align="center">ALX AFRICA</small>
