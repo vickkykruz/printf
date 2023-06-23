@@ -1,5 +1,6 @@
 ## Printf
-<img align="center" src="https://th.bing.com/th/id/R.beeeb35deae61c31d5d3f0b5ee5ff08e?rik=AftuZrBnw7qNAg&pid=ImgRaw&r=0" alt="printf">
+<p align="center" ><img align="center" style="align:center;" src="https://th.bing.com/th/id/R.beeeb35deae61c31d5d3f0b5ee5ff08e?rik=AftuZrBnw7qNAg&pid=ImgRaw&r=0" alt="printf"></p>
+
 This printf project is first group project in the ALXSE Traning. In this project we are tasked to bulid a custome printf `_printf()` that taken format strings and a number of variable arguments and give the apporated result.
 ### Concept Of This Project
 According to <b>Professor Don Colton</b> in his book <b>Secrets Of "printf"</b> his explained that this function was built by computer programmers on serveral occations when they want to read in and print out number, but at a time it stoped. And that time it was constructed based on every programmer options and stored the function in the <b>stdio.h</b> header file libray for easy access.
@@ -30,8 +31,9 @@ Here are steps and procedures we took in this project
 11. Return the program.
 <br> You can access the soft copy of this algorthim <a href="https://docs.google.com/document/d/1lqQjVNdHgSCMkTW11FDzAgSY2S0x6JCjKX1TSs0AwAw/edit?usp=drivesdk">Here </a>
 ### Flowchat Of This Project
-<img align="center" src="https://i.ibb.co/HCDRVmY/Screenshot-20230623-122327.png" alt="Flowchart of this project">
-### Test Project
+<p align="center"><img align="center" src="https://i.ibb.co/HCDRVmY/Screenshot-20230623-122327.png" alt="Flowchart of this project"></p>
+
+### Testing Of Project
 To run this project on your local machine you need to follow this steps
 1. Open your terminal
 2. Locate to the directory you want.
@@ -42,5 +44,7 @@ To run this project on your local machine you need to follow this steps
 7. Run this command `gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c`
 8. The output will be displayed in your terminal
 ### Project Collaborators
+1. Victor Chukwuemeka <onwuegbuchulemvic02@gmail.com>
+2. Mkpouto Obot <mkpoutoobot321@gmail.com>
 
-<small align="center">ALX AFRICA</small>
+<p align="center">ALX AFRICA</p>
