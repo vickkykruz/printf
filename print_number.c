@@ -8,31 +8,25 @@
 int _print_dec(va_list dec)
 {
 	int arr[10];
-	int i = 0, j = 1, k = 1000000000, l, sum = 0;
+	int i = 0, j, k = 1000000000, l, sum;
 
 	l = va_arg(dec, int);
 	arr[0] = l / k;
 
-	while (j < 10)
+	for (j = 1; j < 10; j++)
 	{
 		k /= 10;
 		arr[j] = (l / k) % 10;
-		j++;
 	}
 	/* Handle a negavtive decimal */
 	if (l < 0)
 	{
 		_putchar('-'); /* Output D "-" to stdout */
 		i++; /* Adding The index */
-		j = 0; /* Re-intialing the loop count to 0 */
-		while (j < 10)
-		{
+		for (j = 0; j < 10; j++)
 			arr[j] *= -1;
-			j++;
-		}
 	}
-	j = 0;
-	while (j < 10)
+	for (j = 0, sum = 0; j < 10; j++)
 	{
 		sum += arr[j];
 		if (sum != 0 || j == 9)
@@ -40,7 +34,6 @@ int _print_dec(va_list dec)
 			_putchar('0' + arr[j]);
 			i++;
 		}
-		j++;
 	}
 	return (i);
 }
@@ -53,30 +46,24 @@ int _print_dec(va_list dec)
 int _print_int(va_list argi)
 {
 	int arr[10];
-	int i = 0, j = 1, k = 1000000000, l, sum = 0;
+	int i = 0, j, k = 1000000000, l, sum;
 
 	l = va_arg(argi, int);
 	arr[0] = l / k;
 
-	while (j < 10)
+	for (j = 1; j < 10; j++)
 	{
 		k /= 10;
 		arr[j] = (l / k) % 10;
-		j++;
 	}
 	if (l < 0)
 	{
 		_putchar('-');
 		i++;
-		j = 0;
-		while (j < 10)
-		{
+		for (j = 0; j < 10; j++)
 			arr[j] *= -1;
-			j++;
-		}
 	}
-	j = 0;
-	while (j < 10)
+	for (j = 0, sum = 0; j < 10; j++)
 	{
 		sum += arr[j];
 		if (sum != 0 || j == 9)
@@ -84,7 +71,6 @@ int _print_int(va_list argi)
 			_putchar('0' + arr[j]);
 			i++;
 		}
-		j++;
 	}
 	return (i);
 }
