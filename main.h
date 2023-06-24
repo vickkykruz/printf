@@ -14,6 +14,10 @@
 #define PLACEHOLDERS { \
 	{"c", _print_ch}, \
 	{"s", _print_str}, \
+	{"d", _print_dec}, \
+	{"i", _print_int}, \
+	{"o", _print_oct}, \
+	{"u", _print_unsign}, \
 	{NULL, NULL} \
 }
 
@@ -40,4 +44,8 @@ int _printf(const char *format, ...);
 int _putchar(char c);
 int _print_ch(va_list ch);
 int _print_str(va_list str);
+int _print_dec(va_list dec);
+int _print_int(va_list argi);
+int _print_oct(va_list oct);
+int _print_unsign(va_list unsignInt);
 #endif
