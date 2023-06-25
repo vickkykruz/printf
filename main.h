@@ -10,6 +10,9 @@
 #include <stdio.h>
 #include <unistd.h>
 
+/* Local Buffer of char 1024 */
+#define BUFFER 1024
+
 /** Define the placeholders **/
 #define PLACEHOLDERS { \
 	{"c", _print_ch}, \
@@ -20,6 +23,7 @@
 	{"u", _print_unsign}, \
 	{"x", _print_hex}, \
 	{"X", _print_heX}, \
+	{"S", _print_Str}, \
 	{NULL, NULL} \
 }
 
@@ -53,4 +57,6 @@ int _print_unsign(va_list unsignInt);
 int convert_hex(unsigned int num, unsigned int f);
 int _print_hex(va_list un_x);
 int _print_heX(va_list unX);
+/* static int handle_hex(char ch); */
+int _print_Str(va_list Str);
 #endif
