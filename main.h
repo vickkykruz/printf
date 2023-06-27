@@ -25,6 +25,7 @@
 	{"X", _print_heX}, \
 	{"S", _print_Str}, \
 	{"b", _print_bin}, \
+	{"p", _print_ptr}, \
 	{NULL, NULL} \
 }
 
@@ -61,4 +62,5 @@ int _print_heX(va_list unX);
 /* static int handle_hex(char ch); */
 int _print_Str(va_list Str);
 int _print_bin(va_list bin);
+int _print_ptr(va_list ptr);
 #endif
