@@ -1,12 +1,12 @@
 #include "main.h"
 /**
- * convert_hex - This is a function that handle unsigned int in hexi-decimal
+ * convert_hex -  A function that handle unsigned int in hexi-decimal
  * format
- * @num: This is an argument that represent the unsigned int value to be
+ * @num:  An argument that represent the unsigned int value to be
  * display
- * @f: This ia an argument that handles the flag of the output
+ * @f: An argument that handles the flag of the output
  *
- * Return: This function returns the number od digits outputed
+ * Return: A function that returns the number od digits outputed
  */
 int convert_hex(unsigned int num, unsigned int f)
 {
@@ -17,20 +17,24 @@ int convert_hex(unsigned int num, unsigned int f)
 
 	/* Convert to 16 ^ 7 **/
 	j = 268435456;
+	/* Determine whether to use UPPERCASE or LOWERCASE hex letters */
 	ch = (f) ? 'A' - ':' : 'a' - ':';
 	arr[0] = num / j;
 
+	/* Divide The Number by Decreasing Powers of 16 */
 	while (i < 8)
 	{
 		j /= 16;
 		arr[i] = (num / j) % 16;
 		i++;
 	}
+	/* Print the hexadecimal digits */
 	for (i = 0, sum = 0, counter = 0; i < 8; i++)
 	{
 		sum += arr[i];
 		if (sum || i == 7)
 		{
+			/* Print thw digit, using letters if necessary */
 			if (arr[i] < 10)
 				_putchar('0' + arr[i]);
 			else
