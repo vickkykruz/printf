@@ -1,44 +1,43 @@
 #include "main.h"
-#include <stdio.h>
-#include <stdard.h>
+<<<<<<< HEAD
 
-int _print_bin(va_list bin);
 
-int main()
-{
-	unsigned int number = 42; /* example unsigned int value */
-
-	int count = print_bin(number);
-	printf("\nTotal digits printed: %d\n", count);
-
-	return 0:
-}
-
+=======
 /**
- *  _print_bin - Prints the binary rep of an usigned int
- *  @bin: va_list containing the unsinged int argument
+ * _print_bin - This is a function that return the printed binary notations
+ * @bin: This is an argument that represent the passed unsigned int value to
+ * print
  *
- *  Return: Number of binary digits printed
+ * Return: This function return the total number of digit as int
  */
-
-int_print_bin(va_list bin)
+int _print_bin(va_list bin)
 {
-unsigned int n = va_arg(bin, unsigned int);
-unsigned int m = 1 << 31; /* 2^31, starting with the leftmost bit */
-int count = 0; /* count of digits printed */
+	unsigned int arr[32];
+	int num = 0;
+	unsigned int i, j, k, sum;
 
-	for (int i = 0; i == 32; i++)
+	k = 2147483648; /* Ranging from 2 ^ 31 */
+	j = va_arg(bin, unsigned int); /* Get each variable args */
+	arr[0] = j / k;
+	i = 1;
+
+	while (i < 32)
 	{
-		int digit = (n & m)? 1 : 0; /* Bring out the current bit */
-
-		if(digit || i == 31)
-		{
-			putchar('0' + digit); /* print the binary digit there */
-			count++;
-		}
-		
-		m >>= 1; /* move onto the next bit */
+		k /= 2;
+		arr[i] = (j / k) % 2;
+		i++;
 	}
 
-	return count;
+	for (i = 0, sum = 0, num = 0; i < 32; i++)
+	{
+		sum += arr[i];
+		if (sum || i == 31)
+		{
+			_putchar('0' + arr[i]);
+			num++;
+		}
+	}
+	return (num);
 }
+
+>>>>>>> 8b4b7f9c5296993d343b2648d528577f87ef76c0
