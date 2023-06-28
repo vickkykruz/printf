@@ -1,7 +1,7 @@
 #ifndef PRINTF_TASKS
 #define PRINTF_TASKS
 
-/** Include the libraries for this operation **/
+/** This are  the libraries Included for this operation **/
 #include <stdio.h>
 #include <stddef.h>
 #include <stdlib.h>
@@ -32,7 +32,7 @@
 /**
  * struct ch_fun - This struct holds the function specifiers
  * @type: This is an agrument represent the fixed specifiers
- * @fun: This is an argument represent the function allocated to
+ * @fun: This is an argument that represent the function allocated to
  * the specifiers
  */
 struct ch_fun
@@ -56,9 +56,9 @@ int _print_dec(va_list dec);
 int _print_int(va_list argi);
 int _print_oct(va_list oct);
 int _print_unsign(va_list unsignInt);
-int convert_hex(unsigned int num, unsigned int f);
 int _print_hex(va_list un_x);
 int _print_heX(va_list unX);
+int convert_hex(unsigned int num, unsigned int f);
 /* static int handle_hex(char ch); */
 int _print_Str(va_list Str);
 int _print_bin(va_list bin);
