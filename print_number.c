@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- * _print_dec - This is a function that handle the decimal format specifier
- * @dec: This is an argument that represent the given decimal value
+ * _print_dec -  Function that handle the decimal format specifier
+ * @dec:  Argument that represent the given decimal value
  *
  * Return: This function return a number of digit as (int)
  */
@@ -38,7 +38,7 @@ int _print_dec(va_list dec)
 	return (i);
 }
 /**
- * _print_int - This is a function that handle the interger format specifier
+ * _print_int - Function that handle the interger format specifier
  * @argi: This is an argument that represent the given int value argument
  *
  * Return: The function return of digits as int
