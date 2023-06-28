@@ -1,7 +1,7 @@
 ## Printf
 <p align="center" ><img align="center" style="align:center;" src="https://th.bing.com/th/id/R.beeeb35deae61c31d5d3f0b5ee5ff08e?rik=AftuZrBnw7qNAg&pid=ImgRaw&r=0" alt="printf"></p>
 
-This printf project is first group project in the ALXSE Traning. In this project we are tasked to bulid a custome printf `_printf()` that taken format strings and a number of variable arguments and give the apporated result.
+The printf project is a group project in the ALXSE Training where we create a custom printf function, _printf(), that takes format strings and variable arguments to produce the desired output. It involves parsing the format string, handling different format specifiers, and utilizing variadic functions. The project aims to demonstrate string manipulation, parsing, and teamwork skills in C programming.
 ### Concept Of This Project
 According to <b>Professor Don Colton</b> in his book <b>Secrets Of "printf"</b> his explained that this function was built by computer programmers on serveral occations when they want to read in and print out number, but at a time it stoped. And that time it was constructed based on every programmer options and stored the function in the <b>stdio.h</b> header file libray for easy access.
 <br>
