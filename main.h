@@ -60,7 +60,7 @@ int _print_hex(va_list un_x);
 int _print_heX(va_list unX);
 int convert_hex(unsigned int num, unsigned int f);
 /* static int handle_hex(char ch); */
-int _print_Str(va_list Str);
-int _print_bin(va_list bin);
+nt _print_bin(va_list bin);
 int _print_ptr(va_list ptr);
+int _print_Str(va_list Str);
 #endif
