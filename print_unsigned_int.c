@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- * _print_oct - This is a function that handle the cotal "o" format specifier
- * @oct: This is an argument that represent the given octal argument passed
+ * _print_oct -  Fnction that handle the cotal "o" format specifier
+ * @oct:  Argument that represent the given octal argument passed
  *
  * Return: This function return the number of digits passed
  */
@@ -34,12 +34,12 @@ int _print_oct(va_list oct)
 }
 
 /**
- * _print_unsign - This is a function that handle the unsigned int "u" format
+ * _print_unsign -  Function that handle the unsigned int "u" format
  * specifier.
- * @unsignInt: This is an argument that represnt the unsigned args passed to
+ * @unsignInt: Argument that represnt the unsigned args passed to
  * the function
  *
- * Return: This return the total number of the digit as an int
+ * Return:  Returns  the total number of the digit as an int
  */
 int _print_unsign(va_list unsignInt)
 {
